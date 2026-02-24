@@ -9,5 +9,5 @@ class Cliente(models.Model):
 
     def __str__(self):
         """ devolve uma representançao em string """
-        return self.text
+        return self.clie_nome
     
