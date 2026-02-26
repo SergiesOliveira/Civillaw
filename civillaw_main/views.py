@@ -8,7 +8,7 @@ def index(request):
     return render(request, 'civillaw_main/index.html')
 
 def clientes(request):
-    """ lista dos os clientes cadastrados """
-    cliente = Cliente.objects.order_by('clie_nome')
+    """ lista dos clientes cadastrados """
+    clientes = Cliente.objects.order_by('clie_nome')
     context = {'clientes': clientes}
-    return render(request, 'civillaw_main/index.html')
+    return render(request, 'civillaw_main/clientes.html',context)
